@@ -40,7 +40,7 @@ docker stop country-info
 docker rm country-info
 ```
 
-`host.docker.internal` allows a container on Docker Desktop for Mac to reach a service running on the Mac host. If MySQL runs in another container, use a shared Docker network and the database container/service name instead. Never commit real passwords.
+`host.docker.internal` allows a container on Docker Desktop for Mac to reach a service running on the Mac host. If MySQL runs in another container, use a shared Docker network and the database container/service name instead.
 
 ## 4. Start local Kubernetes on macOS
 
