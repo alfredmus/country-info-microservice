@@ -1,6 +1,6 @@
 # Country Info Integration Microservice
 
-Submission-ready reference implementation for the Integration Microservices Engineer assessment.
+Reference implementation for the Integration Microservices Engineer assessment.
 
 ## 1. What is implemented(`Submission checklist`)
 
