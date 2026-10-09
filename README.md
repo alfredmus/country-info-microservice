@@ -101,7 +101,7 @@ Example:
 
 Prerequisites:
 
-- JDK 21
+- JDK 17
 - Maven 3.9+
 - Docker Desktop (recommended)
 - MySQL 8.x if not using Compose
