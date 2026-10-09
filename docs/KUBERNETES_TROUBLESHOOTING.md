@@ -1,4 +1,4 @@
-# Country Info Microservice — Deployment Guide
+# Country Info Microservice — Kubernetes Troubleshooting Guide
 
 This guide covers local Docker, local Kubernetes on macOS, and a Jenkins pipeline. It assumes Java 17, Maven, a Spring Boot executable JAR listening on port 8080, and MySQL if your application uses the datasource configuration shown here. Adjust the database URL and environment variables to match `application.yml`.
 
