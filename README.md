@@ -1,7 +1,5 @@
 # Country Info Integration Microservice
 
-Reference implementation for the Integration Microservices Engineer assessment.
-
 ## 1. What is implemented(`Submission checklist`)
 
 - [x] Spring Boot REST API.
