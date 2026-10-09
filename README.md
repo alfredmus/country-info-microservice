@@ -227,12 +227,6 @@ kubectl port-forward -n country-info svc/country-info-api 8080:80
 
 Then call the REST API on localhost:8080.
 
-### Production note
-
-`k8s/secret.yaml` contains placeholder credentials intentionally. Do not commit real passwords. Use a Kubernetes Secret manager, sealed secrets, External Secrets, or your cloud provider's secret store.
-
-For production, MySQL should normally be an externally managed HA database rather than a single in-cluster StatefulSet.
-
 ## 8. Troubleshooting Kubernetes
 
 ### Pods are Pending
