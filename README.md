@@ -322,7 +322,7 @@ git init
 git add .
 git commit -m "Implement country information integration microservice"
 git branch -M main
-git remote add origin https://github.com/<your-user>/country-info-microservice.git
+git remote add origin https://github.com/alfredmus/country-info-microservice.git
 git push -u origin main
 ```
 
