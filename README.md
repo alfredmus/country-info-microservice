@@ -321,8 +321,8 @@ git push -u origin main
 | CountryInfo + Language models | JPA entities |
 | CRUD | Controller + Service |
 | Kubernetes scripts | `k8s/` |
-| Deployment guide | README |
-| Troubleshooting guide | README |
+| Deployment guide | https://github.com/alfredmus/country-info-microservice/blob/main/docs/DEPLOYMENT_GUIDE.md |
+| Troubleshooting guide | https://github.com/alfredmus/country-info-microservice/blob/main/docs/KUBERNETES_TROUBLESHOOTING.md |
 | Stateless/high load | replicas + HPA |
 | Logging/metrics | SLF4J + Actuator |
 | MVC/separation | controller/service/repository/integration |
