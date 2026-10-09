@@ -296,15 +296,7 @@ kubectl logs deployment/country-info-api -n country-info --tail=200
 - **Observability:** Actuator health and metrics plus structured application logs.
 - **Separation of concerns:** Controller -> Service -> Integration/Repository -> external system/database.
 
-## 10. Trade-offs
-
-A generated SOAP client from the WSDL would provide stronger compile-time typing, but it adds generated source/build complexity. This implementation uses a small dedicated SOAP client so the assessment can be cloned and run with a standard Maven build while keeping the SOAP boundary isolated.
-
-The circuit breaker is intentionally lightweight and in-process. For a large production platform, a shared resilience library such as Resilience4j plus distributed tracing would be preferable.
-
-The SOAP provider is an external dependency, so imported data should be treated as external data and validated before persistence.
-
-## 11. GitHub submission
+## 10. GitHub submission
 
 ```bash
 git init
@@ -315,7 +307,7 @@ git remote add origin https://github.com/alfredmus/country-info-microservice.git
 git push -u origin main
 ```
 
-## 12. Assessment mapping
+## 11. Assessment mapping
 
 | Requirement | Implementation |
 |---|---|
