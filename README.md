@@ -311,7 +311,7 @@ git push -u origin main
 
 | Requirement | Implementation |
 |---|---|
-| Spring Boot setup | `pom.xml`, Java 21 |
+| Spring Boot setup | `pom.xml`, Java 17 |
 | Spring Web/JPA/MySQL | Maven dependencies |
 | SoapUI/WSDL | README SOAP verification |
 | POST country name | `POST /api/v1/countries/import` |
