@@ -1,0 +1,8 @@
+# Apply in this order:
+# kubectl apply -f namespace.yaml
+# kubectl apply -f secret.yaml
+# kubectl apply -f configmap.yaml
+# kubectl apply -f mysql.yaml
+# kubectl apply -f deployment.yaml
+# kubectl apply -f hpa.yaml
+# kubectl apply -f ingress.yaml

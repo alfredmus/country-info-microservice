@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: country-info-microservice
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/countrydb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL_AUTO:update}
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: false
+
+server:
+  port: ${PORT:8080}
+  shutdown: graceful
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+
+country:
+  soap:
+    endpoint: ${COUNTRY_SOAP_ENDPOINT:http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso}
+
+logging:
+  pattern:
+    console=%d{yyyy-MM-dd HH:mm:ss} | %msg%n
