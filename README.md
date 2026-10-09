@@ -285,8 +285,6 @@ Inspect application logs:
 kubectl logs deployment/country-info-api -n country-info --tail=200
 ```
 
-The SOAP client uses bounded retries and then opens its circuit after repeated failures. This prevents every application pod from continuously hammering an unavailable external dependency.
-
 ## 9. High-load design decisions
 
 - **Stateless API:** no in-memory user/session state; horizontal scaling is safe.
@@ -295,7 +293,6 @@ The SOAP client uses bounded retries and then opens its circuit after repeated f
 - **HPA:** scales API pods from 3 to 10 based on CPU.
 - **Readiness/liveness:** traffic is only sent to healthy application pods.
 - **Rolling updates:** zero desired unavailable pods during normal rollout.
-- **SOAP resilience:** bounded timeout, retry/backoff and circuit breaking.
 - **Observability:** Actuator health and metrics plus structured application logs.
 - **Separation of concerns:** Controller -> Service -> Integration/Repository -> external system/database.
 
