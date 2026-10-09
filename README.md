@@ -324,7 +324,6 @@ git push -u origin main
 | Deployment guide | README |
 | Troubleshooting guide | README |
 | Stateless/high load | replicas + HPA |
-| Failure handling | timeout + retries + circuit |
 | Logging/metrics | SLF4J + Actuator |
 | MVC/separation | controller/service/repository/integration |
 | Production deployment | Docker + probes + rolling update |
