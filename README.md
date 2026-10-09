@@ -326,16 +326,6 @@ git remote add origin https://github.com/alfredmus/country-info-microservice.git
 git push -u origin main
 ```
 
-Before submission:
-
-1. Replace placeholder Docker registry image.
-2. Replace Kubernetes secrets with secure values outside Git.
-3. Run `mvn clean test`.
-4. Run the Docker Compose integration manually.
-5. Test POST, GET, PUT and DELETE.
-6. Run `kubectl rollout status`.
-7. Share the GitHub repository URL.
-
 ## 12. Assessment mapping
 
 | Requirement | Implementation |
